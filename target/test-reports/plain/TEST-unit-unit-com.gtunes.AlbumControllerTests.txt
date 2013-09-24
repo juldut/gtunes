@@ -1,0 +1,116 @@
+Testsuite: com.gtunes.AlbumControllerTests
+Tests run: 8, Failures: 5, Errors: 0, Time elapsed: 1,312 sec
+------------- Standard Output ---------------
+--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+------------- ---------------- ---------------
+
+Testcase: testIndex took 0,303 sec
+Testcase: testList took 0,257 sec
+Testcase: testCreate took 0,113 sec
+Testcase: testSave took 0,109 sec
+	FAILED
+Assertion failed: 
+
+assert response.redirectedUrl == '/album/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14ea516
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == '/album/show/1'
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14ea516
+
+	at com.gtunes.AlbumControllerTests.testSave(AlbumControllerTests.groovy:48)
+
+Testcase: testShow took 0,128 sec
+	FAILED
+Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testShow(AlbumControllerTests.groovy:62)
+
+Testcase: testEdit took 0,085 sec
+	FAILED
+Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testEdit(AlbumControllerTests.groovy:80)
+
+Testcase: testUpdate took 0,09 sec
+	FAILED
+Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testUpdate(AlbumControllerTests.groovy:100)
+
+Testcase: testDelete took 0,092 sec
+	FAILED
+Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testDelete(AlbumControllerTests.groovy:144)
+

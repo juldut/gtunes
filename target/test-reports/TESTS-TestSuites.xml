@@ -1,9 +1,218 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="kimura-laptop" id="0" name="StoreControllerTests" package="gtunes" tests="1" time="0.491" timestamp="2013-09-20T13:47:22">
+  <testsuite errors="0" failures="5" hostname="WKD43" id="0" name="AlbumControllerTests" package="com.gtunes" tests="8" time="1.312" timestamp="2013-09-24T03:36:05">
       <properties />
 
-      <testcase classname="gtunes.StoreControllerTests" name="testSomething" time="0.486" />
+      <testcase classname="com.gtunes.AlbumControllerTests" name="testIndex" time="0.303" />
+
+      <testcase classname="com.gtunes.AlbumControllerTests" name="testList" time="0.257" />
+
+      <testcase classname="com.gtunes.AlbumControllerTests" name="testCreate" time="0.113" />
+
+      <testcase classname="com.gtunes.AlbumControllerTests" name="testSave" time="0.109">
+          <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/album/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14ea516&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/album/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14ea516
+
+	at com.gtunes.AlbumControllerTests.testSave(AlbumControllerTests.groovy:48)
+</failure>
+
+      </testcase>
+
+      <testcase classname="com.gtunes.AlbumControllerTests" name="testShow" time="0.129">
+          <failure message="Assertion failed: &#xa;&#xa;assert album.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       com.gtunes.Album : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testShow(AlbumControllerTests.groovy:62)
+</failure>
+
+      </testcase>
+
+      <testcase classname="com.gtunes.AlbumControllerTests" name="testEdit" time="0.085">
+          <failure message="Assertion failed: &#xa;&#xa;assert album.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       com.gtunes.Album : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testEdit(AlbumControllerTests.groovy:80)
+</failure>
+
+      </testcase>
+
+      <testcase classname="com.gtunes.AlbumControllerTests" name="testUpdate" time="0.09">
+          <failure message="Assertion failed: &#xa;&#xa;assert album.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       com.gtunes.Album : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testUpdate(AlbumControllerTests.groovy:100)
+</failure>
+
+      </testcase>
+
+      <testcase classname="com.gtunes.AlbumControllerTests" name="testDelete" time="0.092">
+          <failure message="Assertion failed: &#xa;&#xa;assert album.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       com.gtunes.Album : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testDelete(AlbumControllerTests.groovy:144)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="WKD43" id="1" name="AlbumTests" package="com.gtunes" tests="1" time="0.239" timestamp="2013-09-24T03:36:07">
+      <properties />
+
+      <testcase classname="com.gtunes.AlbumTests" name="testSomething" time="0.078">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at com.gtunes.AlbumTests.testSomething(AlbumTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="WKD43" id="2" name="SongControllerTests" package="com.gtunes" tests="1" time="0.331" timestamp="2013-09-24T03:36:07">
+      <properties />
+
+      <testcase classname="com.gtunes.SongControllerTests" name="testSomething" time="0.231">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at com.gtunes.SongControllerTests.testSomething(SongControllerTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="WKD43" id="3" name="SongTests" package="com.gtunes" tests="1" time="0.261" timestamp="2013-09-24T03:36:07">
+      <properties />
+
+      <testcase classname="com.gtunes.SongTests" name="testSomething" time="0.081">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at com.gtunes.SongTests.testSomething(SongTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="2" failures="0" hostname="WKD43" id="4" name="UserControllerTests" package="com.gtunes" tests="3" time="0.551" timestamp="2013-09-24T03:36:08">
+      <properties />
+
+      <testcase classname="com.gtunes.UserControllerTests" name="testPasswordsDoNotMatch" time="0.264" />
+
+      <testcase classname="com.gtunes.UserControllerTests" name="testRegistrationFailed" time="0.081">
+          <error message="No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []&#xa;Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()
+	at com.gtunes.UserController$$EOIK95lP.register(UserController.groovy:12)
+	at com.gtunes.UserControllerTests.testRegistrationFailed(UserControllerTests.groovy:34)
+</error>
+
+      </testcase>
+
+      <testcase classname="com.gtunes.UserControllerTests" name="testRegistrationSuccess" time="0.087">
+          <error message="No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []&#xa;Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()
+	at com.gtunes.UserController$$EOIK95lP.register(UserController.groovy:12)
+	at com.gtunes.UserControllerTests.testRegistrationSuccess(UserControllerTests.groovy:50)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testPasswordsDoNotMatch--
+--Output from testRegistrationFailed--
+--Output from testRegistrationSuccess--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testPasswordsDoNotMatch--
+--Output from testRegistrationFailed--
+--Output from testRegistrationSuccess--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="WKD43" id="5" name="UserTests" package="com.gtunes" tests="1" time="0.316" timestamp="2013-09-24T03:36:08">
+      <properties />
+
+      <testcase classname="com.gtunes.UserTests" name="testSomething" time="0.092">
+          <failure message="junit.framework.AssertionFailedError: Implement me" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: junit.framework.AssertionFailedError: Implement me
+	at com.gtunes.UserTests.testSomething(UserTests.groovy:15)
+</failure>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from testSomething--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from testSomething--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="1" hostname="WKD43" id="6" name="StoreControllerTests" package="gtunes" tests="1" time="0.21" timestamp="2013-09-24T03:36:09">
+      <properties />
+
+      <testcase classname="gtunes.StoreControllerTests" name="testSomething" time="0.209">
+          <failure message="Assertion failed: &#xa;&#xa;assert &quot;halo... ini pake grails&quot; == response.text&#xa;                                 |  |        |&#xa;                                 |  |        &quot;&quot;&#xa;                                 |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@c9195f&#xa;                                 false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert &quot;halo... ini pake grails&quot; == response.text
+                                 |  |        |
+                                 |  |        &quot;&quot;
+                                 |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@c9195f
+                                 false
+
+	at gtunes.StoreControllerTests.testSomething(StoreControllerTests.groovy:14)
+</failure>
+
+      </testcase>
 
       <system-out><![CDATA[--Output from testSomething--
 ]]></system-out>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="2" failures="0" hostname="WKD43" name="com.gtunes.UserControllerTests" tests="3" time="0.551" timestamp="2013-09-24T03:36:08">
+  <properties />
+  <testcase classname="com.gtunes.UserControllerTests" name="testPasswordsDoNotMatch" time="0.264" />
+  <testcase classname="com.gtunes.UserControllerTests" name="testRegistrationFailed" time="0.081">
+    <error message="No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []&#xa;Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()
+	at com.gtunes.UserController$$EOIK95lP.register(UserController.groovy:12)
+	at com.gtunes.UserControllerTests.testRegistrationFailed(UserControllerTests.groovy:34)
+</error>
+  </testcase>
+  <testcase classname="com.gtunes.UserControllerTests" name="testRegistrationSuccess" time="0.087">
+    <error message="No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []&#xa;Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()" type="groovy.lang.MissingMethodException">groovy.lang.MissingMethodException: No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()
+	at com.gtunes.UserController$$EOIK95lP.register(UserController.groovy:12)
+	at com.gtunes.UserControllerTests.testRegistrationSuccess(UserControllerTests.groovy:50)
+</error>
+  </testcase>
+  <system-out><![CDATA[--Output from testPasswordsDoNotMatch--
+--Output from testRegistrationFailed--
+--Output from testRegistrationSuccess--
+]]></system-out>
+  <system-err><![CDATA[--Output from testPasswordsDoNotMatch--
+--Output from testRegistrationFailed--
+--Output from testRegistrationSuccess--
+]]></system-err>
+</testsuite>

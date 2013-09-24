@@ -1,5 +1,5 @@
 Testsuite: gtunes.StoreControllerTests
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.491 sec
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0,21 sec
 ------------- Standard Output ---------------
 --Output from testSomething--
 ------------- ---------------- ---------------
@@ -7,4 +7,23 @@ Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.491 sec
 --Output from testSomething--
 ------------- ---------------- ---------------
 
-Testcase: testSomething took 0.486 sec
+Testcase: testSomething took 0,209 sec
+	FAILED
+Assertion failed: 
+
+assert "halo... ini pake grails" == response.text
+                                 |  |        |
+                                 |  |        ""
+                                 |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@c9195f
+                                 false
+
+junit.framework.AssertionFailedError: Assertion failed: 
+
+assert "halo... ini pake grails" == response.text
+                                 |  |        |
+                                 |  |        ""
+                                 |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@c9195f
+                                 false
+
+	at gtunes.StoreControllerTests.testSomething(StoreControllerTests.groovy:14)
+

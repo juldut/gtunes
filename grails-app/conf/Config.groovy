@@ -61,6 +61,7 @@ grails.hibernate.cache.queries = false
 
 environments {
     development {
+        // grails.serverURL = "http://localhost:9000/${appName}"
         grails.logging.jul.usebridge = true
     }
     production {

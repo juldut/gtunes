@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="5" hostname="WKD43" name="com.gtunes.AlbumControllerTests" tests="8" time="1.312" timestamp="2013-09-24T03:36:05">
+  <properties />
+  <testcase classname="com.gtunes.AlbumControllerTests" name="testIndex" time="0.303" />
+  <testcase classname="com.gtunes.AlbumControllerTests" name="testList" time="0.257" />
+  <testcase classname="com.gtunes.AlbumControllerTests" name="testCreate" time="0.113" />
+  <testcase classname="com.gtunes.AlbumControllerTests" name="testSave" time="0.109">
+    <failure message="Assertion failed: &#xa;&#xa;assert response.redirectedUrl == &apos;/album/show/1&apos;&#xa;       |        |             |&#xa;       |        null          false&#xa;       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14ea516&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert response.redirectedUrl == &apos;/album/show/1&apos;
+       |        |             |
+       |        null          false
+       org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@14ea516
+
+	at com.gtunes.AlbumControllerTests.testSave(AlbumControllerTests.groovy:48)
+</failure>
+  </testcase>
+  <testcase classname="com.gtunes.AlbumControllerTests" name="testShow" time="0.129">
+    <failure message="Assertion failed: &#xa;&#xa;assert album.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       com.gtunes.Album : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testShow(AlbumControllerTests.groovy:62)
+</failure>
+  </testcase>
+  <testcase classname="com.gtunes.AlbumControllerTests" name="testEdit" time="0.085">
+    <failure message="Assertion failed: &#xa;&#xa;assert album.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       com.gtunes.Album : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testEdit(AlbumControllerTests.groovy:80)
+</failure>
+  </testcase>
+  <testcase classname="com.gtunes.AlbumControllerTests" name="testUpdate" time="0.09">
+    <failure message="Assertion failed: &#xa;&#xa;assert album.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       com.gtunes.Album : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testUpdate(AlbumControllerTests.groovy:100)
+</failure>
+  </testcase>
+  <testcase classname="com.gtunes.AlbumControllerTests" name="testDelete" time="0.092">
+    <failure message="Assertion failed: &#xa;&#xa;assert album.save() != null&#xa;       |     |      |&#xa;       |     null   false&#xa;       com.gtunes.Album : (unsaved)&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert album.save() != null
+       |     |      |
+       |     null   false
+       com.gtunes.Album : (unsaved)
+
+	at com.gtunes.AlbumControllerTests.testDelete(AlbumControllerTests.groovy:144)
+</failure>
+  </testcase>
+  <system-out><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-out>
+  <system-err><![CDATA[--Output from testIndex--
+--Output from testList--
+--Output from testCreate--
+--Output from testSave--
+--Output from testShow--
+--Output from testEdit--
+--Output from testUpdate--
+--Output from testDelete--
+]]></system-err>
+</testsuite>

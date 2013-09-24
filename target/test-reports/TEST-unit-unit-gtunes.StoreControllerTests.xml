@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="kimura-laptop" name="gtunes.StoreControllerTests" tests="1" time="0.491" timestamp="2013-09-20T13:47:22">
+<testsuite errors="0" failures="1" hostname="WKD43" name="gtunes.StoreControllerTests" tests="1" time="0.21" timestamp="2013-09-24T03:36:09">
   <properties />
-  <testcase classname="gtunes.StoreControllerTests" name="testSomething" time="0.486" />
+  <testcase classname="gtunes.StoreControllerTests" name="testSomething" time="0.209">
+    <failure message="Assertion failed: &#xa;&#xa;assert &quot;halo... ini pake grails&quot; == response.text&#xa;                                 |  |        |&#xa;                                 |  |        &quot;&quot;&#xa;                                 |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@c9195f&#xa;                                 false&#xa;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Assertion failed: 
+
+assert &quot;halo... ini pake grails&quot; == response.text
+                                 |  |        |
+                                 |  |        &quot;&quot;
+                                 |  org.codehaus.groovy.grails.plugins.testing.GrailsMockHttpServletResponse@c9195f
+                                 false
+
+	at gtunes.StoreControllerTests.testSomething(StoreControllerTests.groovy:14)
+</failure>
+  </testcase>
   <system-out><![CDATA[--Output from testSomething--
 ]]></system-out>
   <system-err><![CDATA[--Output from testSomething--

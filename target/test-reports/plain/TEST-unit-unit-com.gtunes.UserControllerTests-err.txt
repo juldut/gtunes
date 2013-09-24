@@ -1,0 +1,3 @@
+--Output from testPasswordsDoNotMatch--
+--Output from testRegistrationFailed--
+--Output from testRegistrationSuccess--

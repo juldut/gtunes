@@ -1,0 +1,32 @@
+Testsuite: com.gtunes.UserControllerTests
+Tests run: 3, Failures: 0, Errors: 2, Time elapsed: 0,551 sec
+------------- Standard Output ---------------
+--Output from testPasswordsDoNotMatch--
+--Output from testRegistrationFailed--
+--Output from testRegistrationSuccess--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testPasswordsDoNotMatch--
+--Output from testRegistrationFailed--
+--Output from testRegistrationSuccess--
+------------- ---------------- ---------------
+
+Testcase: testPasswordsDoNotMatch took 0,264 sec
+Testcase: testRegistrationFailed took 0,08 sec
+	Caused an ERROR
+No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()
+groovy.lang.MissingMethodException: No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()
+	at com.gtunes.UserController$$EOIK95lP.register(UserController.groovy:12)
+	at com.gtunes.UserControllerTests.testRegistrationFailed(UserControllerTests.groovy:34)
+
+Testcase: testRegistrationSuccess took 0,086 sec
+	Caused an ERROR
+No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()
+groovy.lang.MissingMethodException: No signature of method: com.gtunes.User.save() is applicable for argument types: () values: []
+Possible solutions: save(), save(boolean), save(java.util.Map), wait(), last(), any()
+	at com.gtunes.UserController$$EOIK95lP.register(UserController.groovy:12)
+	at com.gtunes.UserControllerTests.testRegistrationSuccess(UserControllerTests.groovy:50)
+
