@@ -7,7 +7,7 @@ class UserController {
             u.properties['login', 'password', 'firstName', 'lastName'] = params
             if(u.password != params.confirm) {
                 u.errors.rejectValue("password", "user.password.dontmatch")
-                return [user:u]        
+                return [user:u]
             }
             else if(u.save()) {
                 session.user = u
@@ -46,13 +46,20 @@ class LoginCommand {
         return u
     }
 
+    User getPengguna() {
+        if(!u && login) {
+            u = User.findByLogin(login, [fetch:[purchasedSongs:'join']])
+        }
+        return u
+    }
+
     static constraints = {
         login blank:false, validator:{ val, obj ->
-            if(!obj.user)
+            if(!obj.pengguna)
             return "user.not.found"
         }
         password blank:false, validator:{ val, obj ->
-            if(obj.user && obj.user.password != val)
+            if(obj.pengguna && obj.pengguna.password != val)
             return "user.password.invalid"
         }
     }

@@ -5,6 +5,7 @@
     <title>gTunes Store</title>
   </head>
   <body id="body">
+    <h2>Store.index.gsp</h2>
     <h1>Your online music store and storage service!</h1>
     <p>Manage your own library, browse music and purchase new tracks as they become available</p>
     

@@ -19,15 +19,8 @@
 </head>
 <body>
   <div id="grailsLogo" role="banner"><a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a></div>
-
-
-
 <g:layoutBody/>
-<div class="footer" role="contentinfo"></div>
-<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
-<g:javascript library="application"/>
-<r:layoutResources />
-
+<br/>
 <div id="navPane">
   <g:if test="${session.user}">
     <ul>
@@ -75,11 +68,18 @@ ${session?.user?.firstName}!
       <br/>
       <input type="image"
              src="${createLinkTo(dir:'images', file:'login-button.gif')}"
-             name="loginButton" id="loginButton" border="0"></input>
+             name="loginButton" id="loginButton" border="0"></input>      
     </g:form>
     <g:renderErrors bean="${loginCmd}"></g:renderErrors>
   </g:else>
 </div>
+
+
+<div class="footer" role="contentinfo"></div>
+<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
+<g:javascript library="application"/>
+<r:layoutResources />
+
 
 
 </body>
