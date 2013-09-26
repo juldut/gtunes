@@ -60,8 +60,7 @@ grails.exceptionresolver.params.exclude = ['password']
 grails.hibernate.cache.queries = false
 
 environments {
-    development {
-        // grails.serverURL = "http://localhost:9000/${appName}"
+    development {        
         grails.logging.jul.usebridge = true
     }
     production {
