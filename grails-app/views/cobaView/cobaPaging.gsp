@@ -1,8 +1,3 @@
-<!--
-  To change this template, choose Tools | Templates
-  and open the template in the editor.
--->
-
 <%@ page contentType="text/html;charset=UTF-8" %>
 
 <html>
@@ -21,7 +16,7 @@
         <tbody>
         <g:each in="${songInstanceList}" status="i" var="songInstance">
                 <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-                        <td><g:link action="show" id="${songInstance.id}">${fieldValue(bean: songInstance, field: "title")}</g:link></td>
+                        <td><g:link controller="song" action="show" id="${songInstance.id}">${fieldValue(bean: songInstance, field: "title")}</g:link></td>
                 </tr>
         </g:each>
         </tbody>

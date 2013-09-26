@@ -12,7 +12,11 @@ class CobaViewController {
     }
     
     def cobaPaging(Integer max) {
-        params.max = Math.min(max ?: 10, 100)
+        params.max = Math.min(max ?: 2, 100)
         [songInstanceList: Song.list(params), songInstanceTotal: Song.count()]
+    }
+    
+    def cobaTagLib() {
+        
     }
 }
