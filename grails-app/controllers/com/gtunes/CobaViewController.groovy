@@ -19,4 +19,12 @@ class CobaViewController {
     def cobaTagLib() {
         
     }
+    
+    def cobaAjax() {        
+    }
+    
+    def showTime() {
+        render "The time is ${new Date()}"
+    }
+    
 }
