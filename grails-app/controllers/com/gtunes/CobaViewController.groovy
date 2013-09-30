@@ -64,8 +64,14 @@ class CobaViewController {
 //        }
 //        render arrSong as JSON
         
-        
-        def arrSong = Song.executeQuery("select id, title as value, concat(artist, ' - ', title) as label from ${Song.name} where title like concat('%', :paramTitle, '%')", [paramTitle:params.term?.toString()])
+        def sqlStr = """
+            select new map(
+                id as id, title as value, 
+                concat(artist, ' - ', title) as label
+            )
+            from ${Song.name} where title like concat('%', :paramTitle, '%')
+        """
+        def arrSong = Song.executeQuery(sqlStr, [paramTitle:params.term?.toString()])
         log.error(arrSong as JSON)
         render arrSong as JSON
     }
